@@ -79,8 +79,11 @@ def quitar_foto_del_album(foto):
 
 if __name__ == '__main__':
     app.run(debug=True)
+<<<<<<< HEAD
 
 from flask import Flask
 
 app = Flask(__name__)
 
+=======
+>>>>>>> 939258c861107150a24a6b659dc2c5867d51aa20
