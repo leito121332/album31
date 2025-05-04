@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Foto</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Agregar Nueva Foto</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="foto">Selecciona una foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required>
+        <button type="submit">Subir Foto</button>
+    </form>
+    <br>
+    <a href="/">Volver al Menú Principal</a>
+</body>
+</html>

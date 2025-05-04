@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrar Foto</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Borrar Foto</h1>
+        
+        
+            <p>No hay fotos disponibles para borrar.</p>
+        
+        
+        <br>
+        <a href="/" class="volver">Volver al Inicio</a>
+    </div>
+</body>
+</html>

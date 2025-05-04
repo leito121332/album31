@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum de Fotos</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container album">
+        
+            <p>No hay fotos en el álbum.</p>
+        
+        
+        <nav>
+            <a href="/album?id=-1" style="visibility:hidden;">Anterior Foto</a>
+            <a href="/">Volver al Menú</a>
+            <a href="/album?id=1" >Siguiente Foto</a>
+        </nav>
+    </div>
+</body>
+</html>

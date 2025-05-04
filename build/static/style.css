@@ -1,0 +1,175 @@
+/* Estilo general */
+body {
+    font-family: 'Dancing Script', cursive;  /* Fuente más bonita y elegante */
+    background: #fff0f5;  /* Fondo suave */
+    color: #333;  /* Texto en gris oscuro para que resalte */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('static/background-love.jpg');  /* Fondo temático */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo del menú */
+.menu {
+    background-color: rgba(255, 105, 180, 0.8);  /* Color romántico */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu:hover {
+    transform: scale(1.05);
+}
+
+.menu h1 {
+    font-size: 3em;  /* Aumentamos el tamaño */
+    font-family: 'Lobster', cursive;  /* Fuente más elegante */
+    margin-bottom: 30px;
+    color: #ff1493;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);  /* Sombra más pronunciada */
+    letter-spacing: 2px;  /* Espaciado entre letras */
+}
+
+/* Nombre personalizado "S y L" en el menú */
+.menu .logo {
+    font-size: 2.5em;  /* Tamaño grande */
+    font-family: 'Pacifico', cursive;  /* Fuente especial y bonita */
+    color: #ff1493;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);  /* Sombra más intensa */
+    margin-bottom: 20px;
+}
+
+/* Estilo de los botones en el menú */
+.menu a {
+    display: block;
+    padding: 20px 40px;
+    margin: 15px 0;
+    background-color: #ff69b4;  /* Un rosa bonito */
+    color: white;
+    font-size: 1.5em;  /* Aumentamos el tamaño de las letras */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* Sombra en el texto */
+}
+
+.menu a:hover {
+    background-color: #ff1493;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);  /* Aumento de sombra al pasar el mouse */
+}
+
+/* Estilo de las fotos en el álbum */
+.album {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.album img {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 8px solid #ff69b4;  /* Borde rosa para las fotos */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para los botones de navegación */
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 20px;
+}
+
+nav a {
+    padding: 15px 30px;
+    background-color: #ff1493;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.5em;  /* Aumentamos el tamaño de la fuente */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* Agregamos sombra en los textos */
+}
+
+nav a:hover {
+    background-color: #ff69b4;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);  /* Aumento de sombra al pasar el mouse */
+}
+
+/* Estilo de los formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;  /* Tamaño de fuente más grande */
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #ff1493;
+    font-size: 1.3em;  /* Aumento del tamaño de las letras */
+    background-color: #fff0f5;
+    transition: background-color 0.3s;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);  /* Sombra leve en texto */
+}
+
+input[type="file"]:hover {
+    background-color: #ffebf2;
+}
+
+/* Botón de envío */
+button {
+    padding: 15px 25px;
+    background-color: #ff1493;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.5em;  /* Aumento del tamaño de la fuente */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  /* Sombra en el texto */
+}
+
+button:hover {
+    background-color: #ff69b4;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);  /* Aumento de sombra al pasar el mouse */
+}
+
+/* Estilo para el texto de enlaces */
+a {
+    color: #ff1493;
+    text-decoration: none;
+    font-size: 1.5em;  /* Aumento de tamaño en los enlaces */
+    font-weight: bold;  /* Hacemos los enlaces más destacados */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ff69b4;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);  /* Sombra al pasar el mouse */
+}
