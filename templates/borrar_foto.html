@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrar Foto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Borrar Foto</h1>
+        
+        {% if imagenes %}
+            <form method="POST" action="{{ url_for('borrar_foto') }}">
+                <label for="foto">Selecciona la foto que deseas borrar:</label>
+                <select name="foto" id="foto">
+                    {% for foto in imagenes %}
+                        <option value="{{ foto }}">{{ foto }}</option>
+                    {% endfor %}
+                </select>
+                <button type="submit">Borrar Foto</button>
+            </form>
+        {% else %}
+            <p>No hay fotos disponibles para borrar.</p>
+        {% endif %}
+        
+        <br>
+        <a href="{{ url_for('home') }}" class="volver">Volver al Inicio</a>
+    </div>
+</body>
+</html>

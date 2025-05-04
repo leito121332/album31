@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Álbum de Fotos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <h1>Bienvenido a tu Álbum de Fotos</h1>
+            <a href="{{ url_for('album') }}">Ver Álbum</a>
+            <a href="{{ url_for('agregar_foto') }}">Agregar Foto</a>
+            <a href="{{ url_for('borrar_foto') }}">Borrar Foto</a>
+        </div>
+    </div>
+</body>
+</html>

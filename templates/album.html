@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Álbum de Fotos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container album">
+        {% if foto_a_mostrar %}
+            <img src="{{ foto_a_mostrar }}" alt="Foto">
+        {% else %}
+            <p>No hay fotos en el álbum.</p>
+        {% endif %}
+        
+        <nav>
+            <a href="{{ url_for('album', id=foto_id - 1) }}" {% if foto_id == 0 %}style="visibility:hidden;"{% endif %}>Anterior Foto</a>
+            <a href="{{ url_for('home') }}">Volver al Menú</a>
+            <a href="{{ url_for('album', id=foto_id + 1) }}" {% if foto_id == imagenes|length - 1 %}style="visibility:hidden;"{% endif %}>Siguiente Foto</a>
+        </nav>
+    </div>
+</body>
+</html>
